@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">LDNoteBookApplication</string>
+
+    <string name="all_notes">AllNotes</string>
+    <string name="search_note">SearchByTitle</string>
+    <string name="setting">Setting</string>
+    <string name="modify_note">modify</string>
+    <string name="add_note">AddNote</string>
+    <string name="searchNote">Search</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
