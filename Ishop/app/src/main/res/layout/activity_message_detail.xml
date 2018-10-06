@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/message_title"
+        android:fitsSystemWindows="true">
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_message_back"
+            android:layout_marginLeft="17dp"
+            android:layout_width="9dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+
+            android:background="@drawable/ipole_icon_back"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/iv_message_title"
+                android:background="@drawable/ic_msg_p1"
+                android:layout_gravity="center"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/tv_message_chatobj_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="Ludwig van Beethvoen"
+                android:textColor="#000"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_message_report"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:alpha="0"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/ic_message_inform"/>
+
+    </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/message_bottom"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+
+        android:background="#fff">
+        <Button
+            android:id="@+id/btn_message_camera"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_weight="0"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ipole_icon_camera"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/message_corners">
+            <EditText
+                android:id="@+id/edit_message_edittext"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:background="@null"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="7dp"
+                android:layout_gravity="center"
+                android:layout_weight="1.5" />
+            <ImageButton
+                android:id="@+id/btn_message_send"
+                android:layout_width="18dp"
+                android:layout_height="16dp"
+                android:layout_marginRight="12dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ipole_message_send_14"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_message_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_below="@+id/message_title"
+        android:layout_above="@+id/message_bottom"/>
+</RelativeLayout>

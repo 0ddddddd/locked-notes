@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="contact_item">
+        <item>关于购买的商品</item>
+        <item>服务问题</item>
+        <item>物流问题</item>
+        <item>其他</item>
+    </string-array>
+</resources>

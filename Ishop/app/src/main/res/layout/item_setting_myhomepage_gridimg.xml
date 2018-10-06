@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/layout_setting_myhomepage_gridimg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:orientation="vertical"
+    android:layout_gravity="left">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="2dp">
+        <com.localworld.ishop.common.image.ISImageView
+            android:id="@+id/iv_setting_myhomepage_gridimg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/husky"/>
+        <ImageView
+            android:id="@+id/iv_setting_myhomepage_griddelete"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/ic_setting_myhomepage_delete"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@drawable/corners_pop"
+        android:layout_width="59dp"
+        android:layout_height="96dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/item_message_del"
+            android:background="@drawable/item_selector"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:text="删 除"
+            android:textSize="14sp"
+            android:textColor="#000"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dcdddd"/>
+        <TextView
+            android:id="@+id/item_message_select"
+            android:background="@drawable/item_selector"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:text="多 选"
+            android:textSize="14sp"
+            android:textColor="#000"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dcdddd"/>
+        <TextView
+            android:id="@+id/item_message_top"
+            android:background="@drawable/item_selector"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:textSize="14sp"
+            android:text="置 顶"
+            android:textColor="#000"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dcdddd"/>
+        <TextView
+            android:id="@+id/item_message_read"
+            android:background="@drawable/item_selector"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:text="已 读"
+            android:textSize="14sp"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

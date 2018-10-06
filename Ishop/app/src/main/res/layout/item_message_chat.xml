@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="62dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/item_selector"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/check_message"
+            android:layout_gravity="center"
+            android:layout_marginLeft="22dp"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:button="@null"
+            android:background="@drawable/checkbox_style_message" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+        <ImageView
+            android:id="@+id/iv_message_img"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:background="@drawable/ic_msg_p2"/>
+            <ImageView
+                android:id="@+id/iv_message_hasRead"
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:background="@drawable/ipole_icon_24"
+                android:layout_marginLeft="42dp"
+                android:layout_marginTop="1dp"/>
+        </RelativeLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="2dp"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="2dp">
+
+            <TextView
+
+                android:id="@+id/tv_message_name"
+                android:textColor="#000000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="内马尔" />
+
+            <TextView
+                android:id="@+id/tv_message_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="mmmmmmmmmahsdh" />
+
+
+        </LinearLayout>
+
+        <TextView
+
+            android:id="@+id/tv_message_time"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:textSize="14sp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="5dp"
+            android:gravity="end"
+            android:text="11:59" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

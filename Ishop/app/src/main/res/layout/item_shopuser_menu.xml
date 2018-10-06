@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@drawable/shape_shopuser_follow_button1"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/image_user"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="停止关注Lugwig van Beethoven?"
+                android:textSize="12sp"
+                android:textColor="#000"
+                android:layout_gravity="center"/>
+
+     </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DCDCDC" />
+
+        <Button
+            android:id="@+id/btn2_bottom_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_shopuser_follow_button2"
+            android:paddingLeft="120dp"
+            android:paddingRight="120dp"
+            android:text="停止关注"
+            android:textSize="15sp"
+            android:textColor="#FF0000"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@android:color/transparent" />
+
+        <Button
+            android:id="@+id/btn_bottom_menu_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_shopuser_follow_button3"
+            android:paddingLeft="120dp"
+            android:paddingRight="120dp"
+            android:text="取消"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    
+</LinearLayout>
